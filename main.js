@@ -9,7 +9,7 @@ car1_y = 10;
 
 car2_width = 120;
 car2_height = 70;
-car_image = "pngwing.png";
+car2_image = "pngwing.png";
 car2_x = 10;
 car2_y = 100;
 
@@ -38,13 +38,13 @@ function uploadcar1(){
 }
 
 function uploadcar2(){
-    ctx.drawImage(car2_imgTag, car2_x, car2_y, car2_width, car_height);
+    ctx.drawImage(car2_imgTag, car2_x, car2_y, car2_width, car2_height);
 }
 
 window.addEventListener("keydown", my_keydown);
 
 function my_keydown(e){
-    kepPressed = e.keyCode;
+    keyPressed = e.keyCode;
     console.log(keyPressed);
     if(keyPressed == '38'){
         car1_up();
